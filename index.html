@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Mark Calculator</h1>
+
+        <div class="input-section">
+            <div id="subject-inputs">
+                <!-- Dynamic subject rows will appear here -->
+                <div class="subject-row">
+                    <input type="text" placeholder="Subject Name" class="subject-name" required>
+                    <input type="number" placeholder="Marks Obtained" class="marks-obtained" min="0" required>
+                    <input type="number" placeholder="Total Marks" class="total-marks" min="1" value="100" required>
+                </div>
+            </div>
+
+            <button id="add-btn" class="btn secondary-btn">Add Subject</button>
+            <button id="calc-btn" class="btn primary-btn">Calculate Results</button>
+        </div>
+
+        <div class="result-section" id="result-section" style="display: none;">
+            <h2>Results Summary</h2>
+            <p><strong>Total Marks:</strong> <span id="res-total">0</span> / <span id="res-max-total">0</span></p>
+            <p><strong>Percentage:</strong> <span id="res-percentage">0</span>%</p>
+            <p><strong>Grade:</strong> <span id="res-grade">-</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

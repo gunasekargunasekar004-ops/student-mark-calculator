@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subject-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.subject-name {
+    flex: 2;
+}
+
+.marks-obtained,
+.total-marks {
+    flex: 1;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #45a049;
+}
+
+.secondary-btn {
+    background-color: #008CBA;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.secondary-btn:hover {
+    background-color: #007bb5;
+}
+
+.result-section {
+    margin-top: 25px;
+    padding: 15px;
+    background: #e8f5e9;
+    border-left: 5px solid #4CAF50;
+    border-radius: 4px;
+}
+
+.result-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.result-section p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
